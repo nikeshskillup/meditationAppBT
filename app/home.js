@@ -6,6 +6,7 @@ import ScreenHeaderBtn from "../components/ScreenHeaderBtn";
 import Welcome from "../components/Welcome";
 import PopularMeditation from "../components/PopularMeditation";
 import DailyMeditation from "../components/DailyMeditation";
+import Favourites from "./settings/Favourites";
 
 const Home = () => {
     const [userDetails, setUserDetails] = useState(null);
@@ -34,7 +35,9 @@ const Home = () => {
         >
 
 <Welcome userDetails={userDetails ? JSON.parse(userDetails) : null} />
+<Favourites/>
 <PopularMeditation/>
+
 <DailyMeditation/>
 </View>
       </ScrollView>
