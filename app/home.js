@@ -6,7 +6,8 @@ import ScreenHeaderBtn from "../components/ScreenHeaderBtn";
 import Welcome from "../components/Welcome";
 import PopularMeditation from "../components/PopularMeditation";
 import DailyMeditation from "../components/DailyMeditation";
-import Favourites from "./settings/Favourites";
+import DailyQuote from "../components/DailyQutes";
+
 
 const Home = () => {
     const [userDetails, setUserDetails] = useState(null);
@@ -35,7 +36,8 @@ const Home = () => {
         >
 
 <Welcome userDetails={userDetails ? JSON.parse(userDetails) : null} />
-<Favourites/>
+<DailyQuote/>
+
 <PopularMeditation/>
 
 <DailyMeditation/>
